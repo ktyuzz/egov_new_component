@@ -32,7 +32,7 @@ public class NoteRecptnDao extends EgovComAbstractDAO {
      * @throws Exception
      */
     public List<?> selectNoteRecptnList(NoteRecptn noteRecptn) throws Exception {
-    	return list("NoteRecptn.selectNoteRecptn", noteRecptn);
+    	return selectList("NoteRecptn.selectNoteRecptn", noteRecptn);
     }
 
     /**

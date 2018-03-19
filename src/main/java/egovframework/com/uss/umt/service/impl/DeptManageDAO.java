@@ -18,7 +18,7 @@ public class DeptManageDAO extends EgovComAbstractDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<DeptManageVO> selectDeptManageList(DeptManageVO deptManageVO) throws Exception {
-		return (List<DeptManageVO>) list("deptManageDAO.selectDeptManageList", deptManageVO);
+		return selectList("deptManageDAO.selectDeptManageList", deptManageVO);
 	}
 
     /**

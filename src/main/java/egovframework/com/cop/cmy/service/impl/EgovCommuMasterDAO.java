@@ -13,7 +13,7 @@ import egovframework.com.cop.cmy.service.CommunityVO;
 public class EgovCommuMasterDAO extends EgovComAbstractDAO{
 
 	public List<?> selectCommuMasterList(CommunityVO cmmntyVO) {
-		return list("CommuMaster.selectCommuMasterList", cmmntyVO);
+		return selectList("CommuMaster.selectCommuMasterList", cmmntyVO);
 	}
 
 	public int selectCommuMasterListCnt(CommunityVO cmmntyVO) {

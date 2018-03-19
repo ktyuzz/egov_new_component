@@ -15,7 +15,7 @@ import egovframework.com.cop.bbs.service.BlogUser;
 public class EgovBBSMasterDAO extends EgovComAbstractDAO {
 
 	public List<?> selectBBSMasterInfs(BoardMasterVO boardMasterVO) {
-		return list("BBSMaster.selectBBSMasterList", boardMasterVO);
+		return selectList("BBSMaster.selectBBSMasterList", boardMasterVO);
 	}
 
 	public int selectBBSMasterInfsCnt(BoardMasterVO boardMasterVO) {
@@ -42,7 +42,7 @@ public class EgovBBSMasterDAO extends EgovComAbstractDAO {
 	 * 블로그 관련
 	 */
 	public List<?> selectBlogMasterInfs(BoardMasterVO boardMasterVO) {
-		return list("BBSMaster.selectBlogMasterList", boardMasterVO);
+		return selectList("BBSMaster.selectBlogMasterList", boardMasterVO);
 	}
 	
 	public int selectBlogMasterInfsCnt(BoardMasterVO boardMasterVO) {

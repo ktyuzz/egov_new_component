@@ -30,7 +30,7 @@ public class PrivacyLogDAO extends EgovComAbstractDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<PrivacyLog> selectPrivacyLogList(PrivacyLog privacyLog) throws Exception{
-		return (List<PrivacyLog>) list("PrivacyLog.selectPrivacyLogList", privacyLog);
+		return selectList("PrivacyLog.selectPrivacyLogList", privacyLog);
 	}
 	
 	/**

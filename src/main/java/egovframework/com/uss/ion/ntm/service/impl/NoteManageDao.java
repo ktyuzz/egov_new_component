@@ -71,7 +71,7 @@ public class NoteManageDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectNoteEmpListPopup(ComDefaultVO searchVO) throws Exception {
-		return list("NoteManage.EovNoteEmpListPopup", searchVO);
+		return selectList("NoteManage.EovNoteEmpListPopup", searchVO);
 	}
 
     /**

@@ -36,7 +36,7 @@ public class DeptAuthorDAO extends EgovComAbstractDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<DeptAuthorVO> selectDeptAuthorList(DeptAuthorVO deptAuthorVO) throws Exception {
-		return (List<DeptAuthorVO>) list("deptAuthorDAO.selectDeptAuthorList", deptAuthorVO);
+		return selectList("deptAuthorDAO.selectDeptAuthorList", deptAuthorVO);
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class DeptAuthorDAO extends EgovComAbstractDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<DeptAuthorVO> selectDeptList(DeptAuthorVO deptAuthorVO) throws Exception {
-		return (List<DeptAuthorVO>) list("deptAuthorDAO.selectDeptList", deptAuthorVO);
+		return selectList("deptAuthorDAO.selectDeptList", deptAuthorVO);
 	}
 	
     /**

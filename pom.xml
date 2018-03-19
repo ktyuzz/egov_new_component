@@ -19,10 +19,11 @@
 		<!-- 컨텍스트 루트 지정 -->
 		<wtpContextName>/</wtpContextName>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
-        <spring.maven.artifact.version>4.3.14.RELEASE</spring.maven.artifact.version>
-        <egovframework.rte.version>3.7.0</egovframework.rte.version>
-        <java.version>1.8</java.version>
+		<spring.maven.artifact.version>4.3.14.RELEASE</spring.maven.artifact.version>
+		<java.version>1.8</java.version>
 		<servlet.version>3.1.0</servlet.version>
+		<egovframework.rte.version>3.7.0</egovframework.rte.version>
+		<egovframework.jpa.version>3.7.0</egovframework.jpa.version>
 	</properties>
 
 	<repositories>
@@ -94,8 +95,37 @@
 			<artifactId>egovframework.rte.bat.core</artifactId>
 			<version>${egovframework.rte.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>egovframework.rte</groupId>
+			<artifactId>egovframework.rte.psl.data.jpa</artifactId>
+			<version>${egovframework.jpa.version}</version>
+		</dependency>
 		<!-- 실행환경 라이브러리 끝 -->
 
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.6.10.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.6.10.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.3.1.Final</version>
+		</dependency>
+		
+		<!-- H2 driver -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.181</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>com.googlecode.log4jdbc</groupId>
 			<artifactId>log4jdbc</artifactId>

@@ -11,7 +11,7 @@ import egovframework.com.uss.mpe.service.IndvdlPgeVO;
 public class EgovIndvdlPgeDAO extends EgovComAbstractDAO {
 
 	public List<?> selectIndvdlPgeList(IndvdlPgeVO searchVO) {
-		return list("IndvdlPge.selectIndvdlPgeList", searchVO);
+		return selectList("IndvdlPge.selectIndvdlPgeList", searchVO);
 	}
 
 	public int selectIndvdlPgeListCnt(IndvdlPgeVO searchVO) {

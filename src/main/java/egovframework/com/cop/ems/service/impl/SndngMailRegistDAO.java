@@ -44,7 +44,7 @@ public class SndngMailRegistDAO extends EgovComAbstractDAO {
 	 * @exception Exception
 	 */
 	public List<?> selectAtchmnFileList(SndngMailVO vo) throws Exception {
-		return list("sndngMailRegistDAO.selectAtchmnFileList", vo);
+		return selectList("sndngMailRegistDAO.selectAtchmnFileList", vo);
 	}
 
 	/**

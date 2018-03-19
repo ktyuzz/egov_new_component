@@ -68,7 +68,7 @@ public class EntrprsManageDAO extends EgovComAbstractDAO{
      * @return List 기업회원약관정보
      */
     public List<?> selectStplat(String stplatId) {
-    	return list("entrprsManageDAO.selectStplat_S", stplatId);
+    	return selectList("entrprsManageDAO.selectStplat_S", stplatId);
     }
 
     /**
@@ -95,7 +95,7 @@ public class EntrprsManageDAO extends EgovComAbstractDAO{
      */
     @SuppressWarnings("unchecked")
 	public List<EntrprsManageVO> selectEntrprsMberList(UserDefaultVO userSearchVO){
-        return (List<EntrprsManageVO>) list("entrprsManageDAO.selectEntrprsMberList", userSearchVO);
+        return selectList("entrprsManageDAO.selectEntrprsMberList", userSearchVO);
     }
     /**
      * 기업회원 총 갯수를 조회한다.

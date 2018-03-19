@@ -46,7 +46,7 @@ public class RoleManageDAO extends EgovComAbstractDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<RoleManageVO> selectRoleList(RoleManageVO roleManageVO) throws Exception {
-		return (List<RoleManageVO>) list("roleManageDAO.selectRoleList", roleManageVO);
+		return selectList("roleManageDAO.selectRoleList", roleManageVO);
 	}
 
 	/**
@@ -92,7 +92,7 @@ public class RoleManageDAO extends EgovComAbstractDAO {
 	 */
 	@SuppressWarnings("unchecked")
 	public List<RoleManageVO> selectRoleAllList(RoleManageVO roleManageVO) throws Exception {
-		return (List<RoleManageVO>) list("roleManageDAO.selectRoleAllList", roleManageVO);
+		return selectList("roleManageDAO.selectRoleAllList", roleManageVO);
 	}    
 
 }

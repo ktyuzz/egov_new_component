@@ -36,7 +36,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrTmplatManage(Map<?, ?> map) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrTmplatManages", map);
+		return selectList("QustnrRespondInfo.selectQustnrTmplatManages", map);
 	}
 
     /**
@@ -46,7 +46,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoManageStatistics1(Map<?, ?> map) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoManageStatistics1", map);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoManageStatistics1", map);
 	}
     /**
 	 * 주관식 통계를 조회 조회한다.
@@ -55,7 +55,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoManageStatistics2(Map<?, ?> map) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoManageStatistics2", map);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoManageStatistics2", map);
 	}
 
     /**
@@ -75,7 +75,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoManageComtnqestnrinfo(Map<?, ?> map) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoManageComtnqestnrinfo", map);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoManageComtnqestnrinfo", map);
 	}
     /**
 	 * 문항정보를 조회한다.
@@ -84,7 +84,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoManageComtnqustnrqesitm(Map<?, ?> map) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoManageComtnqustnrqesitm", map);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoManageComtnqustnrqesitm", map);
 	}
     /**
 	 * 항목정보를 조회한다.
@@ -93,7 +93,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoManageComtnqustnriem(Map<?, ?> map) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoManageComtnqustnriem", map);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoManageComtnqustnriem", map);
 	}
 
     /**
@@ -103,7 +103,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoManageList(ComDefaultVO searchVO) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoManage", searchVO);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoManage", searchVO);
 	}
 
     /**
@@ -122,7 +122,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoList(ComDefaultVO searchVO) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfo", searchVO);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfo", searchVO);
 	}
 
     /**
@@ -131,7 +131,7 @@ public class QustnrRespondInfoDao extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public List<?> selectQustnrRespondInfoDetail(QustnrRespondInfoVO qustnrRespondInfoVO) throws Exception{
-		return list("QustnrRespondInfo.selectQustnrRespondInfoDetail", qustnrRespondInfoVO);
+		return selectList("QustnrRespondInfo.selectQustnrRespondInfoDetail", qustnrRespondInfoVO);
 	}
 
     /**
